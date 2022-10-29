@@ -10,18 +10,13 @@
             border: 1px solid #000;
             margin: 0 auto;
             max-width: 500px;
+            height: 600px;
         }
 
         .flexivel {
             display: flex;
-        }
-
-        .hori {
-            flex-direction: row;
-        }
-
-        .vert {
-            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
         }
 
         .item {
@@ -34,12 +29,10 @@
     </style>
 </head>
 <body>
-    <div class="container flexivel hori">
+    <div class="container flexivel">
         <div class="item">FIRST</div>
         <div class="item">SECOND</div>
         <div class="item">THIRD</div>
-        <div class="item">FOURTH</div>
-        <div class="item">FIFTH</div>
     </div>
 </body>
 </html>
