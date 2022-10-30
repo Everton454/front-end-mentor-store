@@ -8,7 +8,7 @@
     <style>
         .container {
             border: 1px solid #000;
-            margin: 0 auto;
+            margin: auto;
             max-width: 500px;
             height: 600px;
         }
@@ -16,7 +16,7 @@
         .flexivel {
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
         }
 
         .item {
@@ -25,6 +25,10 @@
             color: #fff;
             padding: 8px;
             text-align: center;
+        }
+
+        .quebra {
+            flex-wrap: wrap;
         }
 
         .tamanho0 {
@@ -41,31 +45,51 @@
 
         .tamanho3 {
             flex-grow: 3;
-        }
-
-        .baseA {
-            flex-basis: auto;
-        }
-
-        .base0 {
-            flex-basis: 0;
-        }
+        } 
         
-        .base1 {
-            flex-basis: 1;
+        .ordem0 {
+            order: 0;
         }
 
-        .base2 {
-            flex-basis: 2;
+        .ordem1 {
+            order: 1;
         }
 
+        .ordem2 {
+            order: 2;
+        }
+
+        .ordem3 {
+            order: 3;
+        }
+
+        .reduxir { 
+            flex-shrink: 1;
+        }
+
+        .reduzirmais {
+            flex-shrink: 3;
+        }
+
+        .nreduzir {
+            flex-shrink: 0;
+        }
+
+        .flex0 {
+            flex: 1;
+        }
+
+        .inicio {
+            align-self: flex-start;
+        }
     </style>
 </head>
 <body>
     <div class="container flexivel">
-        <div class="item tamanho1 base0">FIRST</div>
-        <div class="item tamanho1 base0">SECOND</div>
-        <div class="item tamanho1 base0">THIRD</div>
+        <div class="item flex0 inicio">1ST</div>
+        <div class="item flex0 ">2ND</div>
+        <div class="item flex0 ">3RD</div>
+        <div class="item flex0 ">4TH</div>
     </div>
 </body>
 </html>
