@@ -15,7 +15,7 @@
 
         .flexivel {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: flex-start;
         }
 
@@ -26,13 +26,46 @@
             padding: 8px;
             text-align: center;
         }
+
+        .tamanho0 {
+            flex-grow: 0;
+        }
+
+        .tamanho1 {
+            flex-grow: 1;
+        }
+
+        .tamanho2 {
+            flex-grow: 2;
+        }
+
+        .tamanho3 {
+            flex-grow: 3;
+        }
+
+        .baseA {
+            flex-basis: auto;
+        }
+
+        .base0 {
+            flex-basis: 0;
+        }
+        
+        .base1 {
+            flex-basis: 1;
+        }
+
+        .base2 {
+            flex-basis: 2;
+        }
+
     </style>
 </head>
 <body>
     <div class="container flexivel">
-        <div class="item">FIRST</div>
-        <div class="item">SECOND</div>
-        <div class="item">THIRD</div>
+        <div class="item tamanho1 base0">FIRST</div>
+        <div class="item tamanho1 base0">SECOND</div>
+        <div class="item tamanho1 base0">THIRD</div>
     </div>
 </body>
 </html>
