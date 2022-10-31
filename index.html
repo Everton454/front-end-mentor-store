@@ -13,6 +13,8 @@
     .footer { font-size: 11px; text-align: center; }
     .footer a { color: hsl(228, 45%, 44%); }
 
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
     .container {
       display: flex;
       margin: auto;
@@ -43,17 +45,28 @@
     .number {
       border: 1px solid;
       border-radius: 50px;
-      
       padding: 15px;
       margin: 10px;
       width: 80px;
       flex-grow: 1;      
+    }
+    
+    .number:hover {
+      background-color: hsl(25, 97%, 53%);
+      color: white;
+      transition: .5s;
     }
 
     .send {
       border: 1px solid;
       padding: 10px 280px;
       border-radius: 50px;
+    }
+
+    .send:hover {
+      background-color: black;
+      color: white;
+      transition: .5s;
     }
   </style>
 </head>
