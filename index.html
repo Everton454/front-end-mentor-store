@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -100,27 +98,45 @@
       to help us improve our offering!
     </p>
 
-    <input type="button" class="number" value="1">
-    <input type="button" class="number" value="2">
-    <input type="button" class="number" value="3">
-    <input type="button" class="number" value="4">
-    <input type="button" class="number" value="5">
+    <button class="number" id="num1">1</button>
+    <button class="number" id="num2">2</button>
+    <button class="number" id="num3">3</button>
+    <button class="number" id="num4">4</button>
+    <button class="number" id="num5">5</button>
 
-    <button class="send">S U B M I T</button>
+    <a href="" class="send" id="rate" >S U B M I T</a>
   </main>
 
-  <!-- Thank you state start -->
-
-  <div>
-    You selected <!-- Add rating here --> out of 5
+  <div class="rate">
+    You selected 0 out of 5
     Thank you!
     We appreciate you taking the time to give a rating. If you ever need more support,
     don’t hesitate to get in touch!
   </div>
 
-  <!-- Thank you state end -->
+  <script>
+      var n1 = document.getElementById('num1');
+      var n2 = document.getElementById('num2');
+      var n3 = document.getElementById('num3');
+      var n4 = document.getElementById('num4');
+      var n5 = document.getElementById('num5');
+      var x = document.getElementById('rate');
 
-  
+      n1.addEventListener("click", numero1);
+      n2.addEventListener("click", numero2);
+      n3.addEventListener("click", numero3);
+      n4.addEventListener("click", numero4);
+      n5.addEventListener("click", numero5);
+     
+      function numero1() { console.log("Botão 1 clicado.") }
+      function numero2() { console.log("Botão 2 clicado.") }
+      function numero3() { console.log("Botão 3 clicado.") }
+      function numero4() { console.log("Botão 4 clicado.") }
+      function numero5() { console.log("Botão 5 clicado.") }
+
+      if (n1 == true) { }
+  </script>
+
   <footer class="footer">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Everton454">Everton Oliveira</a>.
