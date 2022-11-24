@@ -89,6 +89,53 @@
     .footer {
       color: white;
     }
+
+    .thankContainer {
+      margin: auto;
+      max-width: 500px;
+      height: 500px;
+      background-color: hsl(213, 19%, 18%);
+      border-radius: 30px;
+    }
+
+    .phone {
+      padding: 50px;
+      margin: 0 0 0 110px;
+      background-color: hsl(213, 19%, 18%);
+    }
+
+    .rate {
+      color: hsl(25, 97%, 53%);
+      background-color: hsla(216, 12%, 54%, 0.103);
+      padding: 10px 0 10px 0;
+      margin: 0 0 0 100px;
+      width: 300px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .thank {
+      color: white;
+      font-family: 'Overpass', sans-serif;
+      background-color: hsl(213, 19%, 18%);
+      line-height: 2;
+      text-align: center;
+    }
+       
+    .message {
+      color: hsl(217, 12%, 63%);
+      font-size: 14pt;
+      margin-top: -10px;
+      line-height: 1.3;
+      font-family: 'Overpass', sans-serif;
+      background-color: hsl(213, 19%, 18%);
+      padding: 0 20px 20px 20px;
+      line-height: 1.4;
+    }
+
+    .hidden {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -109,34 +156,24 @@
     <button class="number" id="num5">5</button>
 
     <button href="" class="send" id="rate" >S U B M I T</button>
+
   </main>
-
-  <script>
-      var n1 = document.getElementById('num1');
-      var n2 = document.getElementById('num2');
-      var n3 = document.getElementById('num3');
-      var n4 = document.getElementById('num4');
-      var n5 = document.getElementById('num5');
-      var x = document.getElementById('rate');
-
-      n1.addEventListener("click", numero1);
-      n2.addEventListener("click", numero2);
-      n3.addEventListener("click", numero3);
-      n4.addEventListener("click", numero4);
-      n5.addEventListener("click", numero5);
-     
-      function numero1() { console.log("Botão 1 clicado.") }
-      function numero2() { console.log("Botão 2 clicado.") }
-      function numero3() { console.log("Botão 3 clicado.") }
-      function numero4() { console.log("Botão 4 clicado.") }
-      function numero5() { console.log("Botão 5 clicado.") }
-
-      if (n1 == true) { }
-  </script>
 
   <footer class="footer">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Everton454">Everton Oliveira</a>.
   </footer>
+
+<div class="thankContainer hidden">
+    <img  class="phone" src="illustration-thank-you.svg" alt="rating">
+    <p class="rate">You selected 0 out of 5</p>
+    <h1 class="thank">Thank You!</h1>
+    <div class="message">
+    We appreciate you taking the time to give a rating. If you ever need more support,
+    don’t hesitate to get in touch!
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
