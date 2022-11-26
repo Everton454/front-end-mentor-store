@@ -12,22 +12,50 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    
+
+    .container {
+      margin: auto;
+      border: 1px solid;
+      width: 450px;
+      height: 700px;
+      border-radius: 5% 5% 5% 5%;
+      display: grid;
+    }
+
+    .image {
+      border-radius: 10% 10% 0 0;
+    }
+
+    .item {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
 
-  Order Summary
+  <div class="container">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+    <img class="image" src="illustration-hero.svg" alt="listening-music">
 
-  Annual Plan
-  $59.99/year
+    <div class="item">Order Summary</div>
 
-  Change
+    <div class="item">You can now listen to millions of songs, audiobooks, and podcasts on any
+      device anywhere you like!</div>
 
-  Proceed to Payment
-  Cancel Order
+    
+
+    <div class="item">       <img class="icon" src="icon-music.svg" alt="icon">            Annual Plan <div>$59.99/year</div></div>
+
+   
+
+    <div class="item">Change</div>
+
+    <button class="item">Proceed to Payment</button>
+
+    <div class="item">Cancel Order</div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
