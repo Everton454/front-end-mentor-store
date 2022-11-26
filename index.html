@@ -13,48 +13,83 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+    .background {
+      display: block;
+      margin: auto;
+    }
 
     .container {
       margin: auto;
       border: 1px solid;
       width: 450px;
-      height: 700px;
+      height: 800px;
       border-radius: 5% 5% 5% 5%;
-      display: grid;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16pt;
+      font-family: 'Red Hat Display', sans-serif;
     }
 
     .image {
       border-radius: 10% 10% 0 0;
     }
 
-    .item {
+    .title {
+      border: 1px solid;
+
+      font-size: 20pt;
+      font-weight: bold;
+    }
+
+    .text {
+      border: 1px solid;
+
       text-align: center;
     }
+
+    .item {
+      border: 1px solid;
+
+    }
+
+    .payment {
+      border: 1px solid;
+
+      height: 50px;
+      width: 325px;
+      border-radius: 10px;
+      border: 1px solid;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+
+
+
   </style>
 </head>
 <body>
+
+  <img class="background" src="pattern-background-desktop.svg" alt="background">
 
   <div class="container">
 
     <img class="image" src="illustration-hero.svg" alt="listening-music">
 
-    <div class="item">Order Summary</div>
+    <p class="title">Order Summary</p>
 
-    <div class="item">You can now listen to millions of songs, audiobooks, and podcasts on any
-      device anywhere you like!</div>
+    <p class="text">You can now listen to millions of songs, audiobooks, and podcasts on any
+      device anywhere you like!</p>
 
-    
+    <div class="item">
+    <img class="icon" src="icon-music.svg" alt="icon">
+    <b>Annual Plan</b><br>$59.99/year <span class="span">Change</span></div>
 
-    <div class="item">       <img class="icon" src="icon-music.svg" alt="icon">            Annual Plan <div>$59.99/year</div></div>
+    <button class="payment">Proceed to Payment</button>
 
-   
-
-    <div class="item">Change</div>
-
-    <button class="item">Proceed to Payment</button>
-
-    <div class="item">Cancel Order</div>
+    <p class="item"><b>Cancel Order</b> </p>
   </div>
   
   <div class="attribution">
