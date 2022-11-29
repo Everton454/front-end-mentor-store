@@ -15,12 +15,12 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-    .background {
-      display: block;
-      margin: auto;
+    body {
+      background-color: hsl(225, 100%, 94%);
     }
 
     .container {
+      background-color: white;
       margin: auto;
       border: 1px solid;
       width: 450px;
@@ -39,41 +39,47 @@
     }
 
     .title {
-      border: 1px solid;
-
       font-size: 20pt;
       font-weight: bold;
+      color: hsl(223, 47%, 23%);
     }
 
     .text {
-      border: 1px solid;
-
       text-align: center;
+      font-size: 16pt;
+      color: hsl(224, 23%, 55%);
     }
 
     .item {
-      border: 1px solid;
+      color: hsl(224, 23%, 55%);
+    }
 
+    .plan {
+      color: hsl(223, 47%, 23%)
+    }
+
+    span {
+      color: hsl(245, 75%, 52%);
+      text-decoration: underline;
     }
 
     .payment {
-      border: 1px solid;
-
+      border: none;
       height: 50px;
       width: 325px;
       border-radius: 10px;
       border: 1px solid;
-      font-family: 'Red Hat Display', sans-serif;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      font-size: 16px;
     }
 
-
-
+    .cancel {
+      color: hsl(224, 23%, 55%);
+    }
   </style>
 </head>
 <body>
-
-  <img class="background" src="pattern-background-desktop.svg" alt="background">
-
   <div class="container">
 
     <img class="image" src="illustration-hero.svg" alt="listening-music">
@@ -85,11 +91,11 @@
 
     <div class="item">
     <img class="icon" src="icon-music.svg" alt="icon">
-    <b>Annual Plan</b><br>$59.99/year <span class="span">Change</span></div>
+    <b class="plan">Annual Plan</b><br>$59.99/year <span class="span">Change</span></div>
 
     <button class="payment">Proceed to Payment</button>
 
-    <p class="item"><b>Cancel Order</b> </p>
+    <p class="cancel"><b>Cancel Order</b> </p>
   </div>
   
   <div class="attribution">
