@@ -28,18 +28,18 @@
       border-radius: 5% 5% 5% 5%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       font-size: 16pt;
       font-family: 'Red Hat Display', sans-serif;
     }
 
     .image {
-      border-radius: 10% 10% 0 0;
+      border-radius: 25px 25px 0 0;
     }
 
     .title {
-      font-size: 20pt;
+      font-size: 25pt;
       font-weight: bold;
       color: hsl(223, 47%, 23%);
     }
@@ -50,17 +50,49 @@
       color: hsl(224, 23%, 55%);
     }
 
-    .item {
+    .smallContainer {
+      display: grid;
+      grid-template-columns: auto 190px auto;
       color: hsl(224, 23%, 55%);
+      width: 375px;
+      height: 125px;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 10px;
+    }
+
+    .icone {
+      padding: 35px 0 0 10px ;
     }
 
     .plan {
-      color: hsl(223, 47%, 23%)
+      color: hsl(223, 47%, 23%);
+      display: flex;
+      font-weight: bold;
     }
 
-    span {
+    .price {
+      display: flex;
+    }
+
+    .cake {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 0.8;
+    }
+
+    .change {
       color: hsl(245, 75%, 52%);
       text-decoration: underline;
+      display: flex;
+      justify-content: flex-end;     
+      align-items: center;
+      padding: 0 10px 0 0;
+      transition:  0.5s;
+    }
+
+    .charge:hover {
+      text-decoration: none;
     }
 
     .payment {
@@ -72,30 +104,43 @@
       background-color: hsl(245, 75%, 52%);
       color: white;
       font-size: 16px;
+      box-shadow: 10px 20px hsl(225, 100%, 98%);
     }
 
     .cancel {
       color: hsl(224, 23%, 55%);
+      transition: color 0.2s;
+    }
+
+    .cancel:hover {
+      color: hsl(223, 47%, 23%);
+
     }
   </style>
 </head>
 <body>
   <div class="container">
 
-    <img class="image" src="illustration-hero.svg" alt="listening-music">
+  <img class="image" src="illustration-hero.svg" alt="listening-music">
 
-    <p class="title">Order Summary</p>
+  <p class="title">Order Summary</p>
 
-    <p class="text">You can now listen to millions of songs, audiobooks, and podcasts on any
+  <p class="text">You can now listen to millions of songs, audiobooks, and podcasts on any
       device anywhere you like!</p>
 
-    <div class="item">
-    <img class="icon" src="icon-music.svg" alt="icon">
-    <b class="plan">Annual Plan</b><br>$59.99/year <span class="span">Change</span></div>
+    <div class="smallContainer">
+      <img class="icone" src="icon-music.svg" alt="icone">
+      <p class="cake">
+        <span class="plan">Annual Plan</span>
+        <br>
+        <span class="price">$59.99 / year</span>
+      </p>
+      <p class="change">Change</p>
+    </div>
 
-    <button class="payment">Proceed to Payment</button>
+  <button class="payment">Proceed to Payment</button>
 
-    <p class="cancel"><b>Cancel Order</b> </p>
+  <p class="cancel"><b>Cancel Order</b> </p>
   </div>
   
   <div class="attribution">
