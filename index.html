@@ -10,19 +10,68 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .footer { font-size: 11px; text-align: center; }
+    .footer a { color: hsl(228, 45%, 44%); }
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    * {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .container {
+      width: 1440px;
+      height: 768px;
+      margin: auto;
+      display: flex;
+      background-color: hsl(212, 45%, 89%);
+    }
+
+    .small-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      width: 300px;
+      margin: auto;
+      border-radius: 5%;
+      background-color: white;
+    }
+
+    img {
+      padding: 20px;
+      height: 260px;
+      width: 260px;
+      border-radius: 12%;
+    }
+
+    .bold {
+      font-weight: 700;
+      font-size: 20px;
+      padding: 5px 20px 5px 20px;
+      margin: 0;
+      color: hsl(218, 44%, 22%);
+    }
+
+    .nbold {
+      font-size: 15px;
+      padding: 0 20px 20px 20px;
+      color: hsl(220, 15%, 55%);
+    }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+<div class="container">
+    <div class="small-container">
+      <img src="image-qr-code.png" alt="qr-code">
+      <p class="bold">Improve your front-end skills by building projects</p>
+      <p class="nbold">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+</div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="footer">
+    Challenge by Frontend Mentor. 
+    Coded by <a href="https://www.linkedin.com/in/everton-oliveira-82308a24a/">Everton Oliveira</a>.
   </div>
 </body>
 </html>
