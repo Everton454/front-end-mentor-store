@@ -10,24 +10,97 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
+
+    body {
+      background-color: hsl(233, 47%, 7%);
+    }
+
+    .container {
+      width: 1080px;
+      height: 446px;
+      margin: auto;
+      border: 1px solid;
+      display: grid;
+      grid-template-columns: auto auto;
+      border-radius: 10px;
+      background-color: hsl(244, 38%, 16%);
+    }
+
+    .small-container {
+      padding: 50px 50px 50px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: 35px;
+      color: hsl(0, 0%, 100%);
+    }
+
+    span {
+      color: hsl(277, 64%, 61%);
+    }
+
+    p {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      font-size: 15px;
+      padding: 0 50px 50px 0;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .little-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      font-family: 'Inter', sans-serif;
+      font-weight: bold;
+      font-size: 25px;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .companies, .templates, .queries {
+      font-family: 'Inter', sans-serif;
+      padding: 5px 0 0 0;
+      font-size: 13px;
+      color: hsla(0, 0%, 100%, 0.6);
+    } 
+
+    img {
+      border-radius: 0 5px 5px 0;
+    }
+
+    .attribution { font-size: 11px; text-align: center; color: white;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Get insights that help your business grow.
+  <main class="container">
+    <div class="small-container">
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+      <p>
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
+      <div class="little-container">
+        <div>10k+ <br> <div class="companies">COMPANIES</div></div>
+        <div>314 <br> <div class="templates">TEMPLATES</div></div>
+        <div>12M+ <br> <div class="queries">QUERIES</div></div>
+      </div>
+    </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
+    <img src="image-header-desktop.jpg" alt="people-meeting">
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/everton-oliveira-82308a24a/">Everton Oliveira</a>.
   </div>
 </body>
 </html>
