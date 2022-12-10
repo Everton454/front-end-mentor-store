@@ -3,30 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    .container {
+      margin: auto;
+      width: 350px;
+      height: 350px;
+      border: 1px solid;
+      border-radius: 15px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .fundo {
+      border-radius: 13px 13px 0 0;
+    }
+
+    .profile {
+      border-radius: 50%;
+      border: 5px solid white;
+    }
   </style>
+
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <main class="container">
+    <img class="fundo" src="bg-pattern-card.svg" alt="fundo">
+    <img class="profile" src="image-victor.jpg" alt="victor">
+    <h2>Victor Crest 26</h2> 
+    London
+    80K
+    Followers
+    803K
+    Likes
+    1.4K
+    Photos
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
