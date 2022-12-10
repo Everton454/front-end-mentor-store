@@ -24,14 +24,38 @@
 
     .gray {
       color: hsl(0, 0%, 59%);
+      font-weight: 100;
     }
 
-    h2, p {
+    .profile {
+      position: relative;
+      padding: 90px 0 0 130px;
+    }
+
+    h3, p {
       text-align: center;
+      line-height: 1.0;
     }
 
     .fundo {
       border-radius: 13px 13px 0 0;
+      position: absolute;
+      z-index: -99;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      text-align: center;
+      line-height: 1.5;
+      padding: 20px 0 0 0;
+      font-weight: bold;
+    }
+
+    .fonte {
+      font-size: 12px;
+      font-weight: 100;
     }
 
   </style>
@@ -39,16 +63,16 @@
 </head>
 <body>
   <main class="container">
-    <img class="fundo" src="bg-pattern-card.svg" alt="fundo">
-    <h2>Victor Crest <span class="gray">26</span></h2> 
+    <div>
+      <img class="fundo" src="bg-pattern-card.svg" alt="fundo">
+      <img class="profile" src="image-victor.jpg" alt="victor">
+    </div>
+    <h3>Victor Crest <span class="gray">26</span></h3> 
     <p class="gray">London</p>
     <div class="stats">
-      80K
-      Followers
-      803K
-      Likes
-      1.4K
-      Photos
+      <div>80K<div class="gray fonte">Followers</div></div>
+      <div>803K<div class="gray fonte">Likes</div></div>
+      <div>1.4K<div class="gray fonte">Photos</div></div>
     </div class="small-container">
   </main>
   <div class="attribution">
