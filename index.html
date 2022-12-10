@@ -9,6 +9,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+    
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -18,9 +19,14 @@
       height: 350px;
       border: 1px solid;
       border-radius: 15px;
+      font-family: 'Kumbh Sans', sans-serif;
     }
 
-    h2 {
+    .gray {
+      color: hsl(0, 0%, 59%);
+    }
+
+    h2, p {
       text-align: center;
     }
 
@@ -28,25 +34,22 @@
       border-radius: 13px 13px 0 0;
     }
 
-    .profile {
-      border-radius: 50%;
-      border: 5px solid white;
-    }
   </style>
 
 </head>
 <body>
   <main class="container">
     <img class="fundo" src="bg-pattern-card.svg" alt="fundo">
-    <img class="profile" src="image-victor.jpg" alt="victor">
-    <h2>Victor Crest 26</h2> 
-    London
-    80K
-    Followers
-    803K
-    Likes
-    1.4K
-    Photos
+    <h2>Victor Crest <span class="gray">26</span></h2> 
+    <p class="gray">London</p>
+    <div class="stats">
+      80K
+      Followers
+      803K
+      Likes
+      1.4K
+      Photos
+    </div class="small-container">
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
