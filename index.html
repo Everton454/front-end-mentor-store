@@ -10,16 +10,26 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
     
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .footer { font-size: 11px; text-align: center; }
+    .footer a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+      background-color: hsl(185, 75%, 39%);
+    }
 
     .container {
       margin: auto;
-      width: 350px;
-      height: 350px;
-      border: 1px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      flex-direction: column;
+      background-color: white;
       border-radius: 15px;
       font-family: 'Kumbh Sans', sans-serif;
+      box-shadow: 10px 10px rgba(0, 0, 0, 0.26);
+      width: 38ch;
+      min-height: 40vh;
     }
 
     .gray {
@@ -28,19 +38,25 @@
     }
 
     .profile {
-      position: relative;
-      padding: 90px 0 0 130px;
+      position: absolute;
+      z-index: +1;
+      text-align: center;
     }
 
-    h3, p {
+    h1, p {
       text-align: center;
       line-height: 1.0;
+      font-size: 1em;
     }
 
     .fundo {
       border-radius: 13px 13px 0 0;
-      position: absolute;
-      z-index: -99;
+      display: flex;
+      align-content: flex-start;
+      margin: 
+      padding: 0;
+      
+      
     }
 
     .stats {
@@ -67,7 +83,7 @@
       <img class="fundo" src="bg-pattern-card.svg" alt="fundo">
       <img class="profile" src="image-victor.jpg" alt="victor">
     </div>
-    <h3>Victor Crest <span class="gray">26</span></h3> 
+    <h1>Victor Crest <span class="gray">26</span></h1> 
     <p class="gray">London</p>
     <div class="stats">
       <div>80K<div class="gray fonte">Followers</div></div>
@@ -75,7 +91,7 @@
       <div>1.4K<div class="gray fonte">Photos</div></div>
     </div class="small-container">
   </main>
-  <div class="attribution">
+  <div class="footer">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="">Frontend Mentor</a>. 
     Coded by <a href="https://www.linkedin.com/in/everton-rozalino/">Everton Rozalino</a>.
   </div>
